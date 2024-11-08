@@ -225,7 +225,7 @@ library
     bytestring       >= 0.10.4 && < 0.13,
     deepseq          >= 1.1 && < 1.6,
     ghc-prim         >= 0.2 && < 0.12,
-    template-haskell >= 2.5 && < 2.23
+    template-haskell-lift
 
   if impl(ghc < 9.4)
     build-depends: data-array-byte >= 0.1 && < 0.2
@@ -302,7 +302,7 @@ test-suite tests
     tasty,
     tasty-hunit,
     tasty-quickcheck,
-    template-haskell,
+    template-haskell-lift,
     transformers,
     text
   if impl(ghc < 9.4)
